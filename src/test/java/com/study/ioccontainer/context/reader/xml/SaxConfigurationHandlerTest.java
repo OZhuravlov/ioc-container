@@ -1,4 +1,4 @@
-package com.study.ioccontainer.context.definition.handler;
+package com.study.ioccontainer.context.reader.xml;
 
 import com.study.ioccontainer.entity.BeanDefinition;
 import com.study.ioccontainer.exception.InvalidBeanDefinition;
@@ -16,9 +16,8 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-public class XmlConfigurationHandlerTest {
+public class SaxConfigurationHandlerTest {
 
-    InputStream inputStream;
     SAXParser parser;
     Map<String, BeanDefinition> beanDefinitions;
 
@@ -131,7 +130,7 @@ public class XmlConfigurationHandlerTest {
 
     private void parse(String xmlDocument) throws IOException, SAXException {
         InputStream inputStream = new ByteArrayInputStream(xmlDocument.getBytes());
-        XmlConfigurationHandler handler = new XmlConfigurationHandler();
+        SaxConfigurationHandler handler = new SaxConfigurationHandler();
         parser.parse(inputStream, handler);
         beanDefinitions = handler.getBeanDefinitions();
     }

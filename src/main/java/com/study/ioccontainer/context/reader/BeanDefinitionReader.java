@@ -1,4 +1,4 @@
-package com.study.ioccontainer.context.definition.reader;
+package com.study.ioccontainer.context.reader;
 
 import com.study.ioccontainer.entity.BeanDefinition;
 
