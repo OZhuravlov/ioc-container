@@ -1,4 +1,4 @@
-package com.study.ioccontainer.context.definition.reader.xml;
+package com.study.ioccontainer.context.reader.xml;
 
 import com.study.ioccontainer.entity.BeanDefinition;
 import com.study.ioccontainer.exception.InvalidBeanDefinition;

@@ -1,6 +1,6 @@
-package com.study.ioccontainer.context.definition.reader.xml;
+package com.study.ioccontainer.context.reader.xml;
 
-import com.study.ioccontainer.context.definition.reader.BeanDefinitionReader;
+import com.study.ioccontainer.context.reader.BeanDefinitionReader;
 import com.study.ioccontainer.entity.BeanDefinition;
 
 import javax.xml.parsers.SAXParser;

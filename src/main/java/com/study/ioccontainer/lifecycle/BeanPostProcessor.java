@@ -1,4 +1,4 @@
-package ua.com.bpgdev.customioc.lifecycle;
+package com.study.ioccontainer.lifecycle;
 
 // track as system beans!
 public interface BeanPostProcessor {
